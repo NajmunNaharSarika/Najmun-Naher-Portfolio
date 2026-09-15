@@ -13,10 +13,8 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setThemeState] = useState<Theme>("light");
-  const [mounted, setMounted] = useState(false);
-
+  
   useEffect(() => {
-    setMounted(true);
     try {
       const storedTheme = sessionStorage.getItem("portfolio-theme") as Theme;
       if (storedTheme === "dark") {
@@ -41,11 +39,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       }
     } catch (e) {}
   };
-
-  // Prevent hydration mismatch by not rendering until mounted
-  if (!mounted) {
-    return <>{children}</>;
-  }
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
