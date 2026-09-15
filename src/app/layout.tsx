@@ -8,11 +8,6 @@ export const metadata: Metadata = {
   title: "Najmun Naher | Junior Software Developer (.NET & Web Technologies)",
   description:
     "Official portfolio of Najmun Naher — Junior Software Developer specializing in C#, .NET 6, ASP.NET Core, MVC 5, MS SQL Server, and Modern Web Technologies. Based in Azimpur, Dhaka 1205.",
-  icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
-  },
   keywords: [
     "Najmun Naher",
     ".NET Developer",
