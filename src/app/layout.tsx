@@ -53,13 +53,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const theme = sessionStorage.getItem('portfolio-theme');
+                if (theme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                  sessionStorage.setItem('portfolio-theme', 'light');
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
       <body className={`min-h-screen font-sans antialiased selection:bg-black selection:text-white bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange={false}
-        >
+        <ThemeProvider>
           <LazyMotion features={domAnimation}>
             {children}
           </LazyMotion>

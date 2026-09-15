@@ -1,12 +1,12 @@
 "use client";
 
-import { useTheme } from "next-themes";
+import { useTheme } from "./ThemeProvider";
 import { useEffect, useState } from "react";
 import { m, AnimatePresence } from "framer-motion";
 import { FiSun, FiMoon } from "react-icons/fi";
 
 export function ThemeToggle() {
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export function ThemeToggle() {
     );
   }
 
-  const isDark = (theme === "system" ? resolvedTheme : theme) === "dark";
+  const isDark = theme === "dark";
 
   return (
     <button
