@@ -1,0 +1,288 @@
+{
+  "personalInfo": {
+    "name": "NAJMUN NAHER",
+    "role": "Junior Software Developer | .NET & Web Technologies",
+    "summary": "A motivated and detail-oriented software developer seeking a challenging position in a reputable organization where a collaborative environment and decision-making opportunities will allow me to contribute effectively, while continuously advancing my professional growth in the field of software engineering.",
+    "contact": {
+      "phone1": "+8801723471104",
+      "phone2": "+8801575853357",
+      "email": "naz.moon1998@gmail.com",
+      "github": "https://github.com/NajmunNaharSarika"
+    },
+    "address": {
+      "current": "Azimpur, Dhaka 1205",
+      "permanent": "Niamati, Bakerganj, Barishal"
+    }
+  },
+  "skills": {
+    "languages": [
+      "C# 10 / .NET 6",
+      "JavaScript",
+      "TypeScript",
+      "HTML5 / CSS3"
+    ],
+    "frameworks": [
+      "ASP.NET MVC 5",
+      "ASP.NET Core",
+      "Angular 16",
+      "Entity Framework"
+    ],
+    "databases_and_patterns": [
+      "MS SQL Server",
+      "T-SQL / Stored Proc.",
+      "Repository Pattern",
+      "Clean Architecture"
+    ],
+    "tools": [
+      "Visual Studio 2022",
+      "VS Code",
+      "Git & GitHub",
+      "MS Office Suite",
+      "Claude Code",
+      "Cursor",
+      "Antigravity",
+      "ChatGPT"
+    ]
+  },
+  "education": [
+    {
+      "degree": "BSc in Computer Science & Engineering",
+      "institute": "Bangladesh University of Business and Technology (BUBT)",
+      "year": "Passed: 2026",
+      "result": "CGPA: 3.19 / 4.00"
+    },
+    {
+      "degree": "Diploma in Engineering (Computer Technology)",
+      "institute": "National Institute of Engineering & Technology",
+      "year": "Passed: 2022",
+      "result": "CGPA: 3.77 / 4.00"
+    },
+    {
+      "degree": "Secondary School Certificate (SSC)",
+      "institute": "Niamati Adersha High School, Barishal Board",
+      "year": "Passed: 2015",
+      "result": "GPA: 3.61 / 5.00"
+    }
+  ],
+  "training": [
+    {
+      "course": "Web Application Development Using ASP.NET",
+      "institute": "IsDB-BISEW IT Scholarship Programme",
+      "duration": "Comprehensive Training"
+    },
+    {
+      "course": "Web Development Internship",
+      "institute": "Creative IT Institute",
+      "duration": "3 Months"
+    }
+  ],
+  "projects": [
+    {
+      "id": "edu-track",
+      "title": "Edu Track (Assignment Management System)",
+      "description": "Role-based Assignment & Submission Management System for a school or college. Allows teachers to create assignments, students to submit, and teachers to review.",
+      "longDescription": "Role-based Assignment & Submission Management System for a school or college. The system should allow teachers to create assignments for specific classes or courses, students to view and submit assignments, and teachers to review submissions and provide marks and feedback.",
+      "technologies": [
+        "ASP.NET Core",
+        "C#",
+        "Entity Framework Core",
+        "MS SQL Server"
+      ],
+      "features": [
+        "Role-based access control (Teachers, Students)",
+        "Assignment creation and submission management",
+        "Submission review and feedback system"
+      ],
+      "imageUrl": "/Photos/edu-track.svg",
+      "github": "https://github.com/NajmunNaharSarika/EduTrack",
+      "category": "dotnet"
+    },
+    {
+      "id": "event-management-core",
+      "title": "Event Management System Using ASP.NET Core",
+      "description": "A full-featured ASP.NET Core MVC web application for managing clients and events — built under the Aurum Events & Co. brand. Supports client registration, event assignment, and role-based access control.",
+      "longDescription": "Aurum Events & Co. Event Management System is a comprehensive enterprise web application built on ASP.NET Core MVC with Entity Framework Core and MS SQL Server. It streamlines modern event planning workflows, from initial client registration and venue selection to vendor coordination, guest list tracking, and real-time scheduling. The system enforces strict role-based authorization (Admin, Event Planner, Client) to protect sensitive booking data and maintain operational accountability.",
+      "technologies": [
+        "ASP.NET Core",
+        "C#",
+        "Entity Framework Core",
+        "MS SQL Server",
+        "Bootstrap 5",
+        "Identity RBAC"
+      ],
+      "features": [
+        "Role-Based Access Control (Admin, Event Planner, Client) using ASP.NET Core Identity",
+        "End-to-End Client & Event Booking Pipeline with status tracking",
+        "Venue, Package, and Service Catalog management with interactive pricing calculators",
+        "Relational database design using Entity Framework Core Code-First with migrations",
+        "Modern responsive dashboard with operational metrics and event schedules"
+      ],
+      "imageUrl": "/Photos/event-management-core.svg",
+      "github": "https://github.com/NajmunNaharSarika/EventManagementCore",
+      "category": "dotnet"
+    },
+    {
+      "id": "aspnet-mvc5-event-management",
+      "title": "ASP.NET MVC 5 Event Management System",
+      "description": "Web application for managing clients and event bookings. Features login-based access control for operations while public visitors can browse.",
+      "longDescription": "A robust multi-tier web application built using ASP.NET MVC 5 and ADO.NET / Entity Framework 6. Designed for event service agencies, it offers public catalog browsing for prospective clients while securing administrative functionalities behind a secure authentication gateway. It demonstrates structured MVC architectural separation, data annotation validation, and custom filter attributes for access control.",
+      "technologies": [
+        "ASP.NET MVC 5",
+        "C#",
+        "Entity Framework 6",
+        "MS SQL Server",
+        "Razor Views",
+        "jQuery"
+      ],
+      "features": [
+        "Separation of public inquiry portals and authenticated staff administration backends",
+        "Custom Action Filters for session verification and authorization guards",
+        "Comprehensive model validation using Data Annotations and client-side jQuery validation",
+        "Event booking calendar with dynamic availability checks and conflict prevention",
+        "T-SQL Stored Procedures for high-performance reporting and batch processing"
+      ],
+      "imageUrl": "/Photos/aspnet-mvc5-event.svg",
+      "github": "https://github.com/NajmunNaharSarika/ASP.NET-MVC-5-web-application-for-managing-clients-and-their-event-bookings-",
+      "category": "dotnet"
+    },
+    {
+      "id": "oop-generics-csharp",
+      "title": "OOP & Generics in C#",
+      "description": "A console application demonstrating core OOP principles — inheritance, abstraction, interfaces, generics, and polymorphism — applied to a vehicle classification system.",
+      "longDescription": "An architectural showcase demonstrating foundational Object-Oriented Programming (OOP) and advanced Generic constraints in C# .NET. Through a comprehensive vehicle fleet classification model, the project exemplifies clean interface design, abstract base classes, generic repository contracts, and polymorphic dispatch. It serves as a textbook example of SOLID principles applied in modern C# development.",
+      "technologies": [
+        "C# 10",
+        ".NET 6",
+        "Object-Oriented Design",
+        "Generics",
+        "SOLID Principles"
+      ],
+      "features": [
+        "Deep implementation of Encapsulation, Abstraction, Inheritance, and Polymorphism",
+        "Generic collection abstractions with type safety constraints (where T : class, new())",
+        "Interface-based programming facilitating loose coupling and unit testability",
+        "Custom exception handling hierarchies for runtime domain validation",
+        "Interactive console CLI with structured formatted tabular output"
+      ],
+      "imageUrl": "/Photos/oop-generics.svg",
+      "github": "https://github.com/NajmunNaharSarika/OOP-Generics-in-C",
+      "category": "csharp"
+    },
+    {
+      "id": "html-css-learning-book",
+      "title": "HTML & CSS Interactive Learning Book",
+      "description": "A self-contained, multi-chapter interactive learning resource for HTML and CSS — built entirely with HTML, CSS, and Font Awesome icons.",
+      "longDescription": "A lightweight, modular, and responsive digital interactive learning handbook engineered from the ground up using pure semantic HTML5, modern CSS3 flexbox/grid architectures, and custom CSS custom properties (variables). It provides structured modules covering web fundamentals, responsive design patterns, typography, and interactive UI micro-animations without external heavy framework dependencies.",
+      "technologies": [
+        "HTML5 Semantic",
+        "CSS3 Flexbox/Grid",
+        "CSS Variables",
+        "Font Awesome",
+        "Responsive Design"
+      ],
+      "features": [
+        "Multi-chapter digital syllabus with smooth scroll table of contents and reading progress indicators",
+        "100% pure CSS responsive layouts supporting mobile, tablet, and widescreen viewports",
+        "Custom code snippet showcase blocks with syntax contrast highlighting",
+        "Interactive quiz cards and UI component playground previews",
+        "Ultra-fast zero-dependency static delivery architecture"
+      ],
+      "imageUrl": "/Photos/html-css-book.svg",
+      "github": "https://github.com/NajmunNaharSarika/HTML-CSS-Interactive-Learning-Book/tree/main",
+      "category": "web"
+    },
+    {
+      "id": "nodejs-ecommerce-app",
+      "title": "Node.js E-Commerce Web Application",
+      "description": "A full-featured e-commerce web app built with Node.js, Express, MongoDB, and Socket.io featuring real-time product updates, shopping cart, and order management.",
+      "longDescription": "A scalable full-stack e-commerce platform built with Node.js, Express, MongoDB, and Mongoose ODM, enhanced with Socket.io for real-time order status notifications and live inventory synchronization. The platform includes a customer shopping journey with cart management, session persistence, order placement, and an administrative dashboard for inventory and product catalog control.",
+      "technologies": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose ODM",
+        "Socket.io",
+        "EJS / Tailwind"
+      ],
+      "features": [
+        "Real-time event broadcasting via Socket.io for live order tracking and stock updates",
+        "Persistent cart system with session storage and server-side price verification",
+        "Full CRUD product catalog with category taxonomy and image uploads",
+        "RESTful API endpoints structured with MVC separation and middleware authentication",
+        "MongoDB Aggregation Pipelines for order reporting and sales summaries"
+      ],
+      "imageUrl": "/Photos/nodejs-ecommerce.svg",
+      "github": "https://github.com/NajmunNaharSarika/Node.js-E-Commerce-Web-App",
+      "category": "web"
+    },
+    {
+      "id": "hospital-management-generic-repo",
+      "title": "Hospital Management System — Generic Repository",
+      "description": "A C# .NET console application demonstrating the Generic Repository Pattern applied to a hospital domain managing Doctors and Patients.",
+      "longDescription": "A robust backend architecture demonstration in C# .NET utilizing the Generic Repository Pattern and Unit of Work paradigm to manage hospital entities including Doctors, Patients, Appointments, and Medical Records. It decouples domain logic from data persistence layers, demonstrating how enterprise .NET applications achieve testability, maintainability, and clean separation of concerns.",
+      "technologies": [
+        "C# .NET",
+        "Generic Repository Pattern",
+        "Clean Architecture",
+        "LINQ",
+        "Domain Modeling"
+      ],
+      "features": [
+        "Generic Repository interface (IRepository<T>) implementing reusable CRUD operations",
+        "Strongly-typed entity models with navigation relationships for Doctors and Patients",
+        "LINQ expression predicates for dynamic querying and in-memory indexing",
+        "Centralized error handling and transaction simulation",
+        "Clean Architecture separation ready for plug-and-play database providers"
+      ],
+      "imageUrl": "/Photos/hospital-management.svg",
+      "github": "https://github.com/NajmunNaharSarika/-Hospital-Management-System-Generic-Repository-Pattern-C",
+      "category": "csharp"
+    },
+    {
+      "id": "linq-join-collection-example",
+      "title": "Collection list & LINQ join Example",
+      "description": "Product management system using LINQ to demonstrate data querying and joining operations across Products, Categories, and Models.",
+      "longDescription": "A focused demonstration of Language Integrated Query (LINQ) in C# showcasing advanced collection manipulations, inner joins, group joins, left outer joins, and projections across multiple normalized domain datasets (Products, Categories, Manufacturers, and Models). It illustrates how to write declarative, highly expressive, and efficient data transformations in C#.",
+      "technologies": [
+        "C#",
+        "LINQ Query Syntax",
+        "LINQ Method Syntax",
+        "Lambda Expressions",
+        "Anonymous Types"
+      ],
+      "features": [
+        "Complex multi-table join simulations using LINQ Join, GroupJoin, and SelectMany",
+        "Aggregation computations (Sum, Average, Min, Max, Count) grouped by category",
+        "Dynamic deferred execution vs immediate execution profiling",
+        "Custom projection into strongly-typed DTOs and Anonymous view models",
+        "Clear console formatting illustrating before-and-after query transformations"
+      ],
+      "imageUrl": "/Photos/linq-join.svg",
+      "github": "https://github.com/NajmunNaharSarika/Collection-list-LINQ-join-Example",
+      "category": "csharp"
+    },
+    {
+      "id": "smart-restaurant-ordering-system",
+      "title": "Smart Restaurant Ordering Management System",
+      "description": "A relational database-driven system built with MS SQL Server to automate restaurant operations including table management, menu categorization, and payment tracking.",
+      "longDescription": "A comprehensive database and management application designed for hospitality automation. Built around a normalized 3NF relational schema in MS SQL Server, it manages dine-in tables, kitchen order tickets (KOT), item categorization, modifiers, billing invoices, and daily revenue reconciliation. It features complex stored procedures, triggers, and views for automated reporting and transaction integrity.",
+      "technologies": [
+        "MS SQL Server",
+        "T-SQL Stored Procedures",
+        "Triggers & Views",
+        "Database Normalization (3NF)",
+        "C# .NET"
+      ],
+      "features": [
+        "Normalized 3NF Relational Database Schema with primary/foreign key constraints and indexing",
+        "ACID-compliant T-SQL Stored Procedures for atomic order processing and bill generation",
+        "Automated Triggers for real-time inventory deduction and order status logging",
+        "Table occupancy management and live dining room floor status tracking",
+        "Sales analytics views calculating daily gross revenue, top items, and peak hours"
+      ],
+      "imageUrl": "/Photos/restaurant-ordering.svg",
+      "github": "https://github.com/NajmunNaharSarika/Smart-Restaurant-Ordering-Management-System-SROMS",
+      "category": "database"
+    }
+  ]
+}

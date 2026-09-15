@@ -1,0 +1,60 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090a0f"/>
+      <stop offset="1" stop-color="#141e30"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg3)"/>
+  <circle cx="680" cy="150" r="150" fill="#38bdf8" filter="blur(90px)" opacity="0.2"/>
+
+  <!-- Code Editor Frame -->
+  <rect x="60" y="50" width="680" height="350" rx="16" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="60" y="50" width="680" height="42" rx="16" fill="#161b22"/>
+  <rect x="60" y="76" width="680" height="16" fill="#161b22"/>
+  <line x1="60" y1="92" x2="740" y2="92" stroke="#30363d" stroke-width="1"/>
+
+  <circle cx="86" cy="71" r="5" fill="#f85149"/>
+  <circle cx="102" cy="71" r="5" fill="#d29922"/>
+  <circle cx="118" cy="71" r="5" fill="#2ea043"/>
+
+  <rect x="145" y="60" width="220" height="22" rx="6" fill="#0d1117"/>
+  <text x="160" y="75" fill="#58a6ff" font-family="'Fira Code', monospace" font-size="11" font-weight="600">VehicleFleetRepository.cs</text>
+
+  <rect x="615" y="60" width="95" height="22" rx="6" fill="#58a6ff" fill-opacity="0.15" stroke="#58a6ff" stroke-opacity="0.3"/>
+  <text x="635" y="75" fill="#79c0ff" font-family="system-ui, sans-serif" font-size="10" font-weight="700">C# / OOP</text>
+
+  <!-- Code Snippet -->
+  <g font-family="'Fira Code', Consolas, monospace" font-size="13" line-height="1.6">
+    <text x="90" y="130" fill="#ff7b72">public interface</text>
+    <text x="240" y="130" fill="#79c0ff">IRepository&lt;T&gt;</text>
+    <text x="375" y="130" fill="#ff7b72">where</text>
+    <text x="425" y="130" fill="#ffa657">T : BaseVehicle, new()</text>
+
+    <text x="90" y="155" fill="#e6edf3">{</text>
+    <text x="120" y="180" fill="#7ee787">Task&lt;IEnumerable&lt;T&gt;&gt;</text>
+    <text x="290" y="180" fill="#d2a8ff">GetAllAsync</text>
+    <text x="390" y="180" fill="#e6edf3">(Expression&lt;Func&lt;T, bool&gt;&gt; filter);</text>
+
+    <text x="120" y="205" fill="#7ee787">Task&lt;T?&gt;</text>
+    <text x="210" y="205" fill="#d2a8ff">GetByIdAsync</text>
+    <text x="315" y="205" fill="#e6edf3">(Guid id);</text>
+
+    <text x="120" y="230" fill="#ff7b72">void</text>
+    <text x="165" y="230" fill="#d2a8ff">RegisterFleetVehicle</text>
+    <text x="345" y="230" fill="#e6edf3">(T vehicle);</text>
+    <text x="90" y="255" fill="#e6edf3">}</text>
+
+    <!-- OOP Principles callout -->
+    <rect x="90" y="280" width="620" height="95" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="110" y="310" fill="#58a6ff" font-size="12" font-weight="700">OOP Core Architecture Implemented:</text>
+    <text x="110" y="335" fill="#8b949e" font-size="11">✓ Abstraction &amp; Polymorphism through abstract classes</text>
+    <text x="110" y="355" fill="#8b949e" font-size="11">✓ Generic Type Constraints &amp; SOLID Design Principles</text>
+    <text x="440" y="335" fill="#8b949e" font-size="11">✓ Type-safe Collections</text>
+    <text x="440" y="355" fill="#8b949e" font-size="11">✓ Interface Segregation</text>
+  </g>
+</svg>

@@ -1,0 +1,83 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="100" y1="50" x2="700" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f43f5e" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg1)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <path d="M0 50h800M0 100h800M0 150h800M0 200h800M0 250h800M0 300h800M0 350h800M0 400h800"/>
+    <path d="M100 0v450M200 0v450M300 0v450M400 0v450M500 0v450M600 0v450M700 0v450"/>
+  </g>
+
+  <!-- Ambient Glow Circles -->
+  <circle cx="680" cy="100" r="140" fill="#f43f5e" filter="blur(80px)" opacity="0.25"/>
+  <circle cx="120" cy="360" r="160" fill="#8b5cf6" filter="blur(90px)" opacity="0.2"/>
+
+  <!-- Browser/App Mockup Frame -->
+  <rect x="60" y="50" width="680" height="350" rx="16" fill="url(#card1)" stroke="#334155" stroke-width="1.5"/>
+  
+  <!-- Browser Header Bar -->
+  <rect x="60" y="50" width="680" height="42" rx="16" fill="#0f172a"/>
+  <rect x="60" y="76" width="680" height="16" fill="#0f172a"/>
+  <line x1="60" y1="92" x2="740" y2="92" stroke="#334155" stroke-width="1"/>
+  
+  <!-- Window Controls -->
+  <circle cx="86" cy="71" r="5" fill="#f43f5e"/>
+  <circle cx="102" cy="71" r="5" fill="#fbbf24"/>
+  <circle cx="118" cy="71" r="5" fill="#22c55e"/>
+
+  <!-- URL Bar -->
+  <rect x="145" y="60" width="360" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="160" y="75" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500">https://aurumevents.app/admin/dashboard</text>
+
+  <!-- Status Tag -->
+  <rect x="620" y="60" width="95" height="22" rx="6" fill="#f43f5e" fill-opacity="0.15" stroke="#f43f5e" stroke-opacity="0.3"/>
+  <text x="635" y="75" fill="#fb7185" font-family="system-ui, sans-serif" font-size="10" font-weight="700">ASP.NET CORE</text>
+
+  <!-- Sidebar -->
+  <rect x="80" y="112" width="130" height="268" rx="10" fill="#1e293b" fill-opacity="0.6"/>
+  <rect x="95" y="130" width="100" height="14" rx="4" fill="#f43f5e" fill-opacity="0.3"/>
+  <rect x="95" y="156" width="75" height="10" rx="3" fill="#475569"/>
+  <rect x="95" y="176" width="85" height="10" rx="3" fill="#475569"/>
+  <rect x="95" y="196" width="70" height="10" rx="3" fill="#475569"/>
+  <rect x="95" y="216" width="90" height="10" rx="3" fill="#475569"/>
+
+  <!-- Main Content Dashboard -->
+  <!-- Stats Cards -->
+  <rect x="230" y="112" width="150" height="75" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="245" y="134" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Active Bookings</text>
+  <text x="245" y="168" fill="#ffffff" font-family="system-ui, sans-serif" font-size="24" font-weight="800">142</text>
+  
+  <rect x="395" y="112" width="150" height="75" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="410" y="134" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Total Venues</text>
+  <text x="410" y="168" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="24" font-weight="800">28</text>
+
+  <rect x="560" y="112" width="150" height="75" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="575" y="134" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">System Role</text>
+  <text x="575" y="168" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="20" font-weight="700">Admin RBAC</text>
+
+  <!-- Big Graph / Chart area -->
+  <rect x="230" y="202" width="480" height="178" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="250" y="230" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Aurum Events Management — Booking Schedule</text>
+  
+  <!-- Wave Graph -->
+  <path d="M250 330 Q 320 270, 380 300 T 500 250 T 620 280 T 680 240" fill="none" stroke="url(#glow1)" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="380" cy="300" r="5" fill="#f43f5e"/>
+  <circle cx="500" cy="250" r="5" fill="#ec4899"/>
+  <circle cx="620" cy="280" r="5" fill="#a855f7"/>
+  <circle cx="680" cy="240" r="5" fill="#38bdf8"/>
+</svg>
