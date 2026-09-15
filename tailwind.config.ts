@@ -75,9 +75,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
-        heading: ["var(--font-outfit)", "Outfit", "system-ui", "sans-serif"],
-        serif: ["'Playfair Display'", "'Cormorant Garamond'", "Georgia", "serif"],
+        sans: ["'Century Gothic'", "CenturyGothic", "AppleGothic", "sans-serif"],
+        heading: ["'Century Gothic'", "CenturyGothic", "AppleGothic", "sans-serif"],
+        serif: ["'Century Gothic'", "CenturyGothic", "AppleGothic", "sans-serif"],
       },
       boxShadow: {
         glow: "0 0 25px -5px rgba(94, 122, 107, 0.35)",

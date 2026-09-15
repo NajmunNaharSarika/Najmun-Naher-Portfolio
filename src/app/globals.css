@@ -50,6 +50,7 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Century Gothic' !important;
 }
 
 /* ═══════════════════════════════════════════════════════════════════ */
@@ -454,6 +455,6 @@
 .section-padding { padding-top: 5rem; padding-bottom: 5rem; }
 
 /* Font family helpers */
-.font-heading { font-family: var(--font-outfit); }
-.font-serif-display { font-family: 'Playfair Display', Georgia, serif; }
-.font-mono-code { font-family: var(--font-mono); }
+.font-heading { font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; }
+.font-serif-display { font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; }
+.font-mono-code { font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; }

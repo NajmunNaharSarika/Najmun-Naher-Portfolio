@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { Inter, Outfit } from "next/font/google";
 import { LazyMotion, domAnimation } from "framer-motion";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://najmunnaher.vercel.app"),
   title: "Najmun Naher | Junior Software Developer (.NET & Web Technologies)",
   description:
     "Official portfolio of Najmun Naher — Junior Software Developer specializing in C#, .NET 6, ASP.NET Core, MVC 5, MS SQL Server, and Modern Web Technologies. Based in Azimpur, Dhaka 1205.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   keywords: [
     "Najmun Naher",
     ".NET Developer",
@@ -57,7 +58,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`min-h-screen font-sans antialiased selection:bg-black selection:text-white bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 ${inter.variable} ${outfit.variable}`}>
+      <body className={`min-h-screen font-sans antialiased selection:bg-black selection:text-white bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

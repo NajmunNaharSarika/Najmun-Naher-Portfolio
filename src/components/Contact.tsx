@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { m } from "framer-motion";
+import { useState, useEffect } from "react";
+import { m, AnimatePresence } from "framer-motion";
 import { 
   FiMail, FiSend, FiDownload, FiExternalLink,
   FiPhoneCall, FiCheckCircle, FiMessageSquare, FiAlertCircle, 
@@ -154,19 +154,7 @@ export function Contact({ personalInfo }: ContactProps) {
               <div className="absolute -top-1 -right-1 w-2 h-2 bg-black dark:bg-slate-700 rounded-none" />
               <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-black dark:bg-slate-700 rounded-none" />
               <div className="absolute -bottom-1 -right-1 w-2 h-2 bg-black dark:bg-slate-700 rounded-none" />
-              {isSubmitted ? (
-                <div className="absolute inset-0 bg-black dark:bg-rose-500 text-white flex flex-col items-center justify-center p-8 text-center animate-fade-in z-20">
-                  <FiCheckCircle className="w-16 h-16 mb-6" />
-                  <h3 className="text-3xl font-black uppercase tracking-widest mb-4">Message Sent</h3>
-                  <p className="text-white/80 font-light text-lg">Thank you for reaching out. I'll get back to you shortly.</p>
-                  <button 
-                    onClick={() => setIsSubmitted(false)}
-                    className="mt-10 px-8 py-3 border border-white hover:bg-white hover:text-black dark:hover:text-rose-500 transition-colors text-xs font-bold uppercase tracking-widest"
-                  >
-                    Send Another
-                  </button>
-                </div>
-              ) : (
+
                 <form onSubmit={handleSubmit} className="flex flex-col h-full justify-between gap-12">
                   <div className="space-y-8">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -247,7 +235,38 @@ export function Contact({ personalInfo }: ContactProps) {
                     )}
                   </button>
                 </form>
-              )}
+
+              <AnimatePresence>
+                {isSubmitted && (
+                  <>
+                    {/* Invisible Backdrop for Reliable Dismissal */}
+                    <div 
+                      className="fixed inset-0 z-[90]" 
+                      onClick={() => setIsSubmitted(false)}
+                      onTouchStart={() => setIsSubmitted(false)}
+                    />
+                    
+                    {/* Floating Toast Notification */}
+                    <m.div
+                      initial={{ opacity: 0, y: 50, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 20, scale: 0.95 }}
+                      transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                      className="fixed bottom-6 left-1/2 -translate-x-1/2 md:bottom-8 md:left-auto md:right-8 md:translate-x-0 z-[100] flex items-center gap-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4 md:px-6 md:py-5 rounded-2xl shadow-2xl dark:shadow-[0_10px_40px_rgba(0,0,0,0.5)] w-[90%] max-w-sm"
+                    >
+                      <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-green-50 dark:bg-green-500/10 text-green-600 dark:text-green-400">
+                        <FiCheckCircle className="w-6 h-6" />
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-black dark:text-white font-bold text-sm mb-0.5">Message Sent!</span>
+                        <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm font-medium leading-snug m-0">
+                          Thank you for reaching out. I'll get back to you shortly.
+                        </p>
+                      </div>
+                    </m.div>
+                  </>
+                )}
+              </AnimatePresence>
             </m.div>
 
           </div>

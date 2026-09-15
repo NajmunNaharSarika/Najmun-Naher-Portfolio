@@ -174,9 +174,9 @@ export function Navbar({ personalInfo }: NavbarProps) {
                   key={link.id}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`px-4 py-2.5 rounded-xl text-sm font-bold transition-colors ${
+                  className={`px-4 py-2.5 rounded-none text-sm font-bold uppercase tracking-widest transition-colors border border-transparent ${
                     activeSection === link.id
-                       ? "bg-gradient-to-r from-violet-600 to-pink-500 text-white shadow-md"
+                       ? "bg-black text-white dark:bg-slate-800 dark:border-slate-700"
                        : "text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800"
                   }`}
                 >
@@ -187,7 +187,7 @@ export function Navbar({ personalInfo }: NavbarProps) {
               <div className="pt-3 border-t border-slate-200 dark:border-slate-800 flex items-center gap-3">
                 <a
                   href={`tel:${personalInfo.contact.phone1}`}
-                  className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-violet-600 to-pink-500 shadow-md"
+                  className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-none text-xs font-bold uppercase tracking-widest text-white bg-black hover:bg-black/80 dark:bg-slate-800 dark:hover:bg-slate-700 border border-black dark:border-slate-700 transition-colors"
                 >
                   <FiPhoneCall className="w-4 h-4" />
                   <span>Call Direct</span>
@@ -196,7 +196,7 @@ export function Navbar({ personalInfo }: NavbarProps) {
                   href={personalInfo.contact.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2.5 rounded-xl bg-white dark:bg-slate-800 text-black dark:text-slate-200 border border-slate-200 dark:border-slate-700"
+                  className="p-2.5 rounded-none bg-white dark:bg-slate-800 text-black dark:text-slate-200 border border-black dark:border-slate-700 hover:bg-black hover:text-white dark:hover:bg-slate-700 transition-colors"
                 >
                   <FaGithub className="w-5 h-5" />
                 </a>
