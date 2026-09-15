@@ -1,7 +1,7 @@
 "use client";
 
 import { FiArrowUp, FiPhoneCall, FiMail } from "react-icons/fi";
-import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { PersonalInfo } from "@/types/portfolio";
 
 interface FooterProps {
@@ -28,7 +28,7 @@ export function Footer({ personalInfo }: FooterProps) {
                 {personalInfo.name}
               </p>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                .NET &amp; Web Developer &bull; Azimpur, Dhaka 1205
+                ASP.NET &amp; Web Developer &bull; Dhaka, Bangladesh
               </p>
             </div>
           </div>
@@ -45,6 +45,19 @@ export function Footer({ personalInfo }: FooterProps) {
             >
               <FaGithub className="w-4 h-4" />
             </a>
+
+            {personalInfo.contact.linkedin && (
+              <a
+                href={personalInfo.contact.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-200 transition-colors border border-slate-200 dark:border-slate-700 shadow-sm"
+                aria-label="LinkedIn Profile"
+                title="LinkedIn"
+              >
+                <FaLinkedin className="w-4 h-4" />
+              </a>
+            )}
 
             <a
               href={`https://wa.me/${cleanPhone}`}

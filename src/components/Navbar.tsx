@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { m, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX, FiPhoneCall } from "react-icons/fi";
-import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { ThemeToggle } from "./ThemeToggle";
 
 interface NavbarProps {
@@ -13,6 +13,7 @@ interface NavbarProps {
     contact: {
       phone1: string;
       github: string;
+      linkedin?: string;
     };
   };
 }
@@ -138,6 +139,19 @@ export function Navbar({ personalInfo }: NavbarProps) {
               <FaGithub className="w-4 h-4" />
             </a>
 
+            {personalInfo.contact.linkedin && (
+              <a
+                href={personalInfo.contact.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-xl bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 text-black dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-600 transition-all shadow-sm"
+                aria-label="LinkedIn Profile"
+                title="View LinkedIn"
+              >
+                <FaLinkedin className="w-4 h-4" />
+              </a>
+            )}
+
             <ThemeToggle />
           </div>
 
@@ -200,6 +214,16 @@ export function Navbar({ personalInfo }: NavbarProps) {
                 >
                   <FaGithub className="w-5 h-5" />
                 </a>
+                {personalInfo.contact.linkedin && (
+                  <a
+                    href={personalInfo.contact.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 rounded-none bg-white dark:bg-slate-800 text-black dark:text-slate-200 border border-black dark:border-slate-700 hover:bg-black hover:text-white dark:hover:bg-slate-700 transition-colors"
+                  >
+                    <FaLinkedin className="w-5 h-5" />
+                  </a>
+                )}
               </div>
             </div>
           </m.div>
